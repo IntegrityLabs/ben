@@ -1,0 +1,93 @@
+.splash-page
+  background-color sand
+
+.header
+  background-color white
+  display table
+  overflow hidden
+  padding 1rem 2rem
+  width 100%
+
+  +below(550px)
+    display block
+
+  &__logo--col-4-12
+    width 20%
+
+    +tablet()
+      width 50%
+
+    +below(550px)
+      width 70%
+
+  &__social-nav--col-8-12
+    text-align right
+
+    +tablet()
+      display inline-block
+      width 100%
+
+    +below(550px)
+      display inline-block
+      text-align center
+      width 100%
+
+
+.banner-splash
+  background url('img/Commerce_150_hero-1.jpg') no-repeat center center
+  background-size cover
+  height 350px
+  width 100%
+
+  +tablet()
+    height 250px
+
+  +below(650px)
+    height 150px
+
+.main
+  background-color sand
+  //display table
+  padding-top 1.5rem
+  width 100%
+
+  &__content--col-8-12
+    display block
+    margin 0 auto
+
+    +below(875px)
+      width 80%
+
+  &__heading
+    color green
+    font-size 2rem
+
+    +below(550px)
+      line-height 1
+
+    +below(450px)
+      text-align center
+
+    span
+      +below(725px)
+        display inline-block
+
+  &__button
+    border 2px solid green
+    color green
+    display inline-block
+    padding.5rem 1rem
+
+    &:hover
+      background-color green
+      color slate
+      text-decoration: none
+
+
+.footer
+  padding-top 2rem
+
+  p
+    font-size 11px
+    color tin
+    text-align center

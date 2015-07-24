@@ -1,0 +1,65 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
+    block seo
+  
+    link(href="http://fonts.googleapis.com/css?family=Roboto\+Slab:300,100,400,700", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,400italic", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Roboto\+Condensed:300italic,400italic,700italic,400,300,700", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Roboto\+Mono:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic", rel="stylesheet", type="text/css")
+
+    link(rel='stylesheet', type='text/css', href='style.css')
+
+    //-script(src='js/vendor/modernizr.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+      
+    //- script(src='js/vendor/jmpress.min.js')
+    //- script(src='js/vendor/dasky.js')
+      
+    script(src='js/global.js')
+      
+    script(type="text/javascript").÷÷÷
+      console.log( 'hello' );  
+
+    link(rel="shortcut icon", sizes="16x16 24x24 32x32 48x48 64x64", href="favicon.ico")
+    link(rel="apple-touch-icon", sizes="57x57", href="img/favicon-57.png")
+    link(rel="apple-touch-icon-precomposed", sizes="57x57", href="img/favicon-57.png")
+    link(rel="apple-touch-icon", sizes="72x72", href="img/favicon-72.png")
+    link(rel="apple-touch-icon", sizes="114x114", href="img/favicon-114.png")
+    link(rel="apple-touch-icon", sizes="120x120", href="img/favicon-120.png")
+    link(rel="apple-touch-icon", sizes="144x144", href="img/favicon-144.png")
+    link(rel="apple-touch-icon", sizes="152x152", href="img/favicon-152.png")
+    meta(name="application-name", content="Commerce Trust")
+    meta(name="msapplication-TileImage", content="img/favicon-144.png")
+    meta(name="msapplication-TileColor", content="#0fc")
+
+
+  body
+    
+    header.header
+      .header__logo--col-4-12
+        a(href="index.html")
+          img(src='img/CommerceFDIC.png', alt='Commerce Bank logo')
+      .header__social-nav--col-8-12
+        a(href='http://www.facebook.com/commercebank', target='_blank')
+          icon(name="ei-sc-facebook", size="m")
+        a(href='https://twitter.com/CommerceBank?rd=1', target='_blank')
+          icon(name="ei-sc-linkedin", size="m")
+        a(href='http://www.linkedin.com/company/commerce_bank', target='_blank')
+          icon(name="ei-sc-twitter", size="m")
+        a#toggle(href='#')
+          icon(name="ei-navicon", size="m")
+            
+        
+    block content
+          
+    footer.footer
+      .footer--container÷÷
+        p
+          | Copyright &#169; 2015 Commerce Bancshares, Inc. Member FDIC. All Rights Reserved. 
+          a(href="https://www.commercebank.com/about/security-center/privacy.asp", target="_blank") Privacy 
+          |  | 
+          a(href="https://www.commercebank.com/sitemap/", target="_blank") Site Map

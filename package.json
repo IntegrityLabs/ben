@@ -1,0 +1,48 @@
+{
+  "name": "150splash",
+  "version": "1.0.0",
+  "description": "splash page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CommerceTrust/150splash.git"
+  },
+  "author": "Integrity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CommerceTrust/150splash/issues"
+  },
+  "homepage": "https://github.com/CommerceTrust/150splash",
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "evil-icons": "^1.7.6",
+    "fs": "0.0.2",
+    "gulp": "^3.9.0",
+    "gulp-changed": "^1.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.0",
+    "gulp-evil-icons": "^0.1.9",
+    "gulp-front-matter": "^1.2.3",
+    "gulp-gh-pages": "^0.5.2",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-pleeease": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-stylus": "^2.0.5",
+    "gulp-uglify": "^1.2.0",
+    "gulp-yaml": "^0.2.4",
+    "imagemin-pngquant": "^4.1.2",
+    "marked": "^0.3.3",
+    "path": "^0.11.14",
+    "run-sequence": "^1.1.1",
+    "rupture": "^0.6.1",
+    "yargs": "^3.15.0"
+  }
+}

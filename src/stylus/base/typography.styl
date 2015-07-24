@@ -1,0 +1,113 @@
+// Vars
+base-font-size = 20px
+base-line-height = 1.5
+
+
+// Typefaces
+//       # font-family roboto
+# font-family roboto slab
+# font-family roboto condensed
+font-family Roboto Mono
+
+Sans = {
+  font: roboto\, sans-serif,
+  weight: {
+    hairline: 100,
+    light: 300
+    normal: 400,
+    semibold: 500,
+    bold: 700,
+    ultra: 900
+  }
+}
+
+Slab = {
+  font: roboto slab\, serif,
+  weight: {
+    hairline: 100,
+    light: 300
+    normal: 400,
+    bold: 700
+  }
+}
+
+Condensed = {
+  font: roboto condensed\, serif,
+  weight: {
+    light: 300
+    normal: 400,
+    bold: 700
+  }
+}
+
+Mono = {
+  font: roboto mono\, serif,
+  weight: {
+    hairline: 100,
+    light: 300
+    normal: 400,
+    semibold: 500,
+    bold: 700
+  }
+}
+
+
+// Line height function
+line-height-function()
+  base-font-size * base-line-height
+
+
+// Var must be specified after returning the line-height function
+cal-line-height = line-height-function()
+
+
+html
+  font-size: base-font-size
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+
+
+body
+  color lead
+  font-family: Sans.font
+  line-height base-line-height
+  margin 0
+
+
+[class*='__heading']
+  color green
+  font-family: Serif.font
+  font-size 2.5rem
+  font-weight normal
+  line-height 1
+  margin-bottom 2rem
+
+
+// Anchor text
+a
+  text-decoration: none
+  color: green
+
+  &:hover
+    color: nightgreen
+    text-decoration: none
+
+
+// Buttons
+[class*='__button']
+  border 2px solid green
+  color green
+  display inline-block
+  padding .5rem 1rem
+
+  &:hover
+    background-color green
+    color white
+    text-decoration: none
+
+
+// Content Areas
+[class*='content']
+  // Add margin bottom to all elements inside this container
+  & > *
+    margin-bottom 1.5rem

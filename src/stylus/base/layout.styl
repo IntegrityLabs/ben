@@ -1,0 +1,45 @@
+.container
+  background-color: #fff
+  margin: 0 auto
+  max-width: 1200px
+
+
+
+[class*='col-']
+  display: table-cell
+  vertical-align: middle
+
+
+// CONTAINER
+//  This is used to constrain the content of the site to a standard width
+[class*='__container']
+  margin: 0 auto
+  max-width: 1200px
+
+
+
+// All columns 1 - 12 are made with this little function
+columns = 12
+
+for i in (1..columns)
+  [class*=col-{i}-{columns}]
+    width: (i/columns) * 100%
+
+    //add include media queries here
+
+
+// col-1-12
+// col-2-12
+// col-3-12
+// col-4-12
+// col-5-12
+// col-6-12
+// col-7-12
+// col-8-12
+// col-9-12
+// col-10-12
+// col-11-12
+// col-12-12
+
+.test--col-2-12
+  background-color red
